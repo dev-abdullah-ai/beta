@@ -1,4 +1,4 @@
-# streamlit_app.py (v3)
+# streamlit_app
 import streamlit as st
 
 def volume(l, w, h): return l * w * h
@@ -32,10 +32,10 @@ def page_welcome():
     st.caption("هنا يمكنك حساب الطنية واختيار الجهاز المناسب لمختلف المساحات")
     c1, c2 = st.columns(2)
     with c1:
-        if st.button("ابدأ الحاسبة ✅", use_container_width=True):
+        if st.button("ابـدأ الحسـاب", use_container_width=True):
             st.session_state.page = "calc"; st.rerun()
     with c2:
-        if st.button("اذهب إلى الدعم 💙", use_container_width=True):
+        if st.button("أدعمنا هنا", use_container_width=True):
             st.session_state.page = "support"; st.rerun()
 
 def top_nav():
